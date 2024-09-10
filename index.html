@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food delivery website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- //sidebar   -->
+   <div class="sidebar">
+    <h1 class="logo">FoodTime</h1>
+    <div class="sidebar-menus">
+        <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="#"><i class="fa-solid fa-receipt"></i>Bills</a>
+        <a href="#"><i class="fa-solid fa-wallet"></i>Wallet</a>
+        <a href="#"><i class="fa-solid fa-comment"></i>Notification</a>
+        <a href="#"><i class="fa-solid fa-address-book"></i>Contact Us</a>
+        <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>
+    </div>
+    <div class="sidebar-logout">
+        <a href="#"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+    </div>
+   </div>
+   <div class="main">
+    <div class="main-navbar">
+        <i class="fa-solid fa-bars"></i>
+        <div class="search">
+            <input type="text" placeholder="Search your favourite food">
+            <button class="search-btn">Search</button>
+        </div>
+        <div class="profile">
+            <a class="cart" href="#"><i class="toggle-menu fa-solid fa-cart-shopping"></i></a>
+            <a class="user" href="index1.html"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </div>
+    <div class="main-highlight">
+        <div class="main-header">
+            <h2 class="main-title">Recommendations</h2>
+            <div class="main-arrow">
+                <i class="back fa-solid fa-arrow-left"></i>
+                <i class="next fa-solid fa-arrow-right"></i>
+            </div>
+            </div>
+            <div class="highlight-wrapper">
+            <div class="highlight-card">
+                <img class="highlight-img" src="salad.png">
+                <div class="highlight-desc">
+                    <h4>Fresh Salad</h4>
+                    <p>$42.50</p>
+                </div>
+            </div>
+            <div class="highlight-card">
+                <img class="highlight-img" src="c.png">
+                <div class="highlight-desc">
+                    <h4>Cafe Latte</h4>
+                    <p>$20.00</p>
+                </div>
+            </div>
+            <div class="highlight-card">
+                <img class="highlight-img" src="steak.png">
+                <div class="highlight-desc">
+                    <h4>Premium Steak</h4>
+                    <p>$145.00</p>
+                </div>
+            </div>
+        <div class="highlight-card">
+            <img class="highlight-img" src="burger.png">
+            <div class="highlight-desc">
+                <h4>Big Burgers</h4>
+                <p>$70.00</p>
+            </div>
+        </div>
+        </div>
+   </div>
+<div class="main-menus">
+    <div class="main-filter">
+   <div>
+    <h2 class="main-title">Menu <br>Category</h2>
+    <div class="main-arrow">
+        <i class="back fa-solid fa-arrow-left"></i>
+        <i class="next fa-solid fa-arrow-right"></i>
+    </div>
+   </div>
+   <div class="filter-wrapper">
+    <div class="filter-card">
+        <div class="filter-icon">
+            <i class="fa-solid fa-utensils"></i>
+        </div>
+    <p>All Menus</p>
+   </div>
+   <div class="filter-card">
+    <div class="filter-icon">
+        <i class="fa-solid fa-burger"></i>
+    </div>
+    <p>Burgers</p>
+   </div>
+   <div class="filter-card">
+    <div class="filter-icon">
+        <i class="fa-solid fa-pizza-slice"></i>
+    </div>
+    <p>Pizzas</p>
+   </div>
+   <div class="filter-card">
+    <div class="filter-icon">
+        <i class="fa-solid fa-wine-bottle"></i>
+    </div>
+    <p>Wine</p>
+   </div>
+   <div class="filter-card">
+    <div class="filter-icon">
+        <i class="fa-solid fa-ice-cream"></i>
+    </div>
+    <p>Ice Cream</p>
+   </div>
+   <div class="filter-card">
+   <div class="filter-icon">
+    <i class="fa-solid fa-mug-saucer"></i>
+   </div>
+   <p>Coffee</p>
+  </div>
+  <div class="filter-card">
+  <div class="filter-icon">
+    <i class="fa-solid fa-fish"></i>
+  </div>
+  <p>Seafood</p>
+ </div>
+ <div class="filter-card">
+ <div class="filter-icon">
+    <i class="fa-solid fa-bone"></i>
+ </div>
+ <p>Healthy</p>
+</div>
+</div>
+    </div>
+    <hr class="divider">
+    <div class="main-detail">
+        <h2 class="main-title">Choose Order</h2>
+        <div class="detail-wrapper">
+            <div class="detail-card">
+                <img class="detail-img" src="s.png">
+                <div class="detail-desc">
+                <div class="detail-name">
+                    <h4 class="head">Shrimp Soup</h4>
+                    <p class="detail-sub">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, explicabo.</p>
+                    <p class="price">$152.50</p>
+                    <div class="btn1">
+                  <button onclick="order(this)" data-heading="Shrimp Soup" data-sub="Get your favourite food now and stay up-to-date to get more deals and discounts" data-price="152.50" class="btn">Add to Cart</button></div>
+                </div>
+                <i class="detail-favorites fa-regular fa-bookmark"></i>
+            </div></div>
+            <div class="detail-card">
+                <img class="detail-img" src="p.png">
+                <div class="detail-desc">
+                <div class="detail-name">
+                    <h4 class="head">Pizza</h4>
+                    <p class="detail-sub">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, explicabo.</p>
+                    <p class="price">$65.50</p>
+                    <div class="btn1">
+                  <button onclick="order(this)" data-heading="Pizza" data-sub="Get your favourite food now and stay up-to-date to get more deals and discounts" data-price="65.50" class="btn">Add to Cart</button></div>
+                </div>
+                <i class="detail-favorites fa-regular fa-bookmark"></i>
+            </div></div>
+            <div class="detail-card">
+                <img class="detail-img" src="w.png">
+                <div class="detail-desc">
+                <div class="detail-name">
+                    <h4 class="head">Wine</h4>
+                    <p class="detail-sub">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, explicabo.</p>
+                    <p class="price">$15.00</p>
+                    <div class="btn1">
+                  <button onclick="order(this)" data-heading="Wine" data-sub="Get your favourite food now and stay up-to-date to get more deals and discounts" data-price="15.00" class="btn">Add to Cart</button></div>
+                </div>
+                <i class="detail-favorites fa-regular fa-bookmark"></i>
+            </div></div>
+            <div class="detail-card">
+                <img class="detail-img" src="i.png">
+                <div class="detail-desc">
+                <div class="detail-name">
+                    <h4 class="head">Ice Cream</h4>
+                    <p class="detail-sub">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, explicabo.</p>
+                    <p class="price">$45.50</p>
+                    <div class="btn1">
+                  <button onclick="order(this)" data-heading="Ice Cream" data-sub="Get your favourite food now and stay up-to-date to get more deals and discounts" data-price="45.50" class="btn">Add to Cart</button></div>
+                </div>
+                <i class="detail-favorites fa-regular fa-bookmark"></i>
+            </div></div>
+            <div class="detail-card">
+                <img class="detail-img" src="c.png">
+                <div class="detail-desc">
+                <div class="detail-name">
+                    <h4 class="head">Coffee</h4>
+                    <p class="detail-sub">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, explicabo.</p>
+                    <p class="price">$13.50</p>
+                    <div class="btn1">
+                  <button onclick="order(this)" data-heading="Coffee" data-sub="Get your favourite food now and stay up-to-date to get more deals and discounts" data-price="13.50" class="btn">Add to Cart</button></div>
+                </div>
+                <i class="detail-favorites fa-regular fa-bookmark"></i>
+            </div></div>
+            <div class="detail-card">
+                <img class="detail-img" src="b.png">
+                <div class="detail-desc">
+                <div class="detail-name">
+                    <h4 class="head">Beef Burgers</h4>
+                    <p class="detail-sub">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, explicabo.</p>
+                    <p class="price">$65.50</p>
+                    <div class="btn1">
+                 <button onclick="order(this)" data-heading="Beef Burgers" data-sub="Get your favourite food now and stay up-to-date to get more deals and discounts" data-price="65.50" class="btn">Add to Cart</button></div>
+                </div>
+                <i class="detail-favorites fa-regular fa-bookmark"></i>
+            </div></div>
+        </div>
+    </div>
+</div>
+<div class="order"></div>
+<script src="app1.js" ></script>
+</body>
+</html>
